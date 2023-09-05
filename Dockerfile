@@ -11,6 +11,8 @@ RUN pip install \
 
 RUN apt update && apt install default-jre -y
 
+COPY plantuml.jar /plantuml.jar
+
 COPY entrypoint entrypoint
 
 ENTRYPOINT ["/entrypoint"]
