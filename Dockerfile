@@ -9,6 +9,8 @@ RUN pip install \
   recommonmark \
   m2r2
 
+RUN apt update && apt install default-jre
+
 COPY entrypoint entrypoint
 
 ENTRYPOINT ["/entrypoint"]
